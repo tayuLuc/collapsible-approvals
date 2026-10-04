@@ -1,0 +1,21 @@
+{
+  "name": "collapsible-approvals",
+  "version": "0.2.0",
+  "description": "Owns the conversation.composer seat for approval interactions: a React approval card with a vanilla-style collapse chevron (replaces core ApprovalPanel while an approval pends); per-key collapsed state persisted.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}
